@@ -37,7 +37,7 @@ var wow = new WOW(
     step = (step == null) ? 20 : step;
     var timer = setInterval(function(){
       start += 2;
-      if (start != parseInt(end) + 1){
+      if (start <= parseInt(end) + 1){
         $element.text(start);
       } else {
         clearInterval(timer);
