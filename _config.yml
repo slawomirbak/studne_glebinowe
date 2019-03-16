@@ -16,7 +16,7 @@
 title: Studnie głębinowe Krzysztof Bąk
 email: slawek417@gmail.com
 description: Studnie głębinowe bielsko biała - studnie beskidzie. Działamy na terenie województwa śląskiego i małopolskiego
-baseurl: "studne_glebinowe" # the subpath of your site, e.g. /blog
+baseurl: "/studne_glebinowe" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
