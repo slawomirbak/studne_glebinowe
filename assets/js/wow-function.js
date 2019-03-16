@@ -13,7 +13,6 @@ var wow = new WOW(
       resetAnimation: true,     // reset animation on end (default is true)
     }
   );
-  wow.init();
 
   var wow_counter = new WOW(
     {
@@ -22,7 +21,7 @@ var wow = new WOW(
       offset:       0,          // distance to the element when triggering the animation (default is 0)
       mobile:       true,       // trigger animations on mobile devices (default is true)
       live:         true,       // act on asynchronously loaded content (default is true)
-      callback:     function(box) {
+      callback:function(box) {
         $(box).children().find('h3').each((index, element)=>{
           animateValueCounter($(element), 0, $(element).text())
         });
@@ -31,14 +30,13 @@ var wow = new WOW(
       resetAnimation: true,     // reset animation on end (default is true)
     }
   );
-  wow_counter.init();
-
+ 
 
   function animateValueCounter($element, start, end, step)
   {
     step = (step == null) ? 20 : step;
     var timer = setInterval(function(){
-      start += 1;
+      start += 2;
       if (start != parseInt(end) + 1){
         $element.text(start);
       } else {
@@ -46,3 +44,12 @@ var wow = new WOW(
       }
     },step);
   }
+
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
+if (!isMobileDevice()){
+  wow.init();
+  wow_counter.init();
+}
