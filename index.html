@@ -2,33 +2,7 @@
 layout: default
 ---
 <header class="header-main">
-    <div class="overlay-light">
-        <div class="hero-logo">
-            <a href="/">LOGO</a>
-        </div>
-        <nav class="hero-nav" role="navigation">
-            <div id="menuToggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <a href="/">
-                        <li>STRONA GŁÓWNA</li>
-                    </a>
-                    <a href="#">
-                        <li>OFERTA</li>
-                    </a>
-                    <a href="#">
-                        <li>ZDJĘCIA</li>
-                    </a>
-                    <a href="#">
-                        <li>KONTAKT</li>
-                    </a>
-                </ul>
-            </div>
-        </nav>
-    </div>
+    {% include nav.html %}
     <div class="hero-section">
         <div class="home-title wow bounceInUp">
             <h1> {{site.title}} </h1>
@@ -127,26 +101,5 @@ layout: default
         </section>
     </div>
 </div>
-<footer>
-    <nav class="footer-nav">
-        <div class="hero-logo">
-            <a href="/">LOGO</a>
-        </div>
-        <ul>
-            <li>
-                <a href="#"><i class="fas fa-home"></i>STRONA GŁÓWNA</a>
-            </li>
-            <li>
-                <a href="#"><i class="fas fa-file-alt"></i>OFERTA</a>
-            </li>
-            <li>
-                <a href="#"><i class="far fa-images"></i>ZDJĘCIA</i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fas fa-envelope"></i>KONTAKT</i></a>
-            </li>
-        </ul>
-    </nav>
-    <p class="copyright">Copyright&copy; Sławomir Bąk 2019</p>
-</footer>
+{% include footer.html %}
 
