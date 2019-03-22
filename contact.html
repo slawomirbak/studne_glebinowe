@@ -3,22 +3,48 @@ layout: default
 ---
 <header class="header-main">
     {% include nav.html %}
-    <div class="hero-section">
-        <div class="home-title wow bounceInUp">
-            <h1> {{site.title}} </h1>
-            <div class="main-button anchor-element">
-                <a href="#section-wrapper">
-                    Czytaj więcej
-                </a>
-            </div>
+    <div class="hero-section-contact">
+        <div class="home-title">
+            <h1> KONTAKT </h1>
         </div>
     </div>
 </header>
 <div class="section-wrapper clear-both" id="section-wrapper">
-    <section class="clear-both about-us-parent">
-            
+    <section class="clear-both about-us-parent-contact">
+        <article class="about-us-contact" id="about-us-section-contact">
+            <div class="about-us-avatar-contact">
+                <img src="{{site.baseurl}}/assets/img/Section/avatar.png" alt="avatar" />
+                <h2> {{site.title}}</h2>
+            </div>
+        </article>
     </section>
 </div>
-<div class="map-wrapper">
+<div class="section-wrapper-contact clear-both">
+    <section class="clear-both contact-parent">
+        <a href="tel:+48888888888">
+            <article class="phone-number-parent circle-icon">
+                <span>
+                    <i class="fas fa-phone"></i>
+                </span> 
+                <p>+48 256 989 888</p>
+            </article>
+        </a>
+        <a href="mailto:xyz@gmail.com">
+            <article class="mail-parent circle-icon">
+                <span>
+                        <i class="far fa-envelope"></i>
+                </span> 
+                <p>studnie@gmail.com</p>
+            </article>
+        </a>
+    </section>
+</div>
+
+<div class="section-wrapper clear-both">
+    <section class="contact-where-wrapper">
+            <h2> Gdzie już kopaliśmy</h2>
+    </section>
+</div>
+<div class="map-wrapper clear-both">
         <iframe src="https://www.google.com/maps/d/embed?mid=1CoOTXCbqgA2z1rjzQJ9hMK6Be7Zm-II3" width="600" height="450"></iframe>
 </div>

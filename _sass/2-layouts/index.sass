@@ -1,8 +1,7 @@
 
 // Header
 header.header-main
-    position: relative
-    z-index: 1
+    z-index: 0
     display: flex
     flex-direction: column
     justify-content: center
@@ -12,14 +11,13 @@ header.header-main
     background-position: bottom center
     background-repeat: no-repeat
     overflow: hidden
-
     .overlay-light
         position: fixed
         height: 50px
         top: 0
         left: 0
         right: 0
-        z-index: 2
+        z-index: 1
         background: $black
         opacity: .8
         .hero-logo
