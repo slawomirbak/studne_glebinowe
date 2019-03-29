@@ -45,12 +45,13 @@ header
                 width: 100%
                 tr
                     border-bottom: 1px solid rgba(81, 122, 244, 0.1)
+                    display: list-item
                 td
                     width: 50%
                     font-size: 16px
                     padding: 20px
                     color: $highlight-color
-                    display: block
+                    
                 td:first-child
                     text-align: left
                 td:last-child
@@ -106,8 +107,9 @@ header
                 width: 46%
                 margin: 40px 2%
                 table
-                    td 
-                        display: table-cell
+                    tr
+                        display: table-row
+                        
 @media (min-width:1255px)
     .section-wrapper-oferts    
         .oferts-parent    
@@ -116,7 +118,6 @@ header
                 width: 31%
                 margin: 40px 1%
                 box-sizing: border-box
-
 // section condition
 .stars-conditions
     max-width: 1144px
