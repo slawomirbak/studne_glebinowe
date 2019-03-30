@@ -10,6 +10,9 @@ $('.overlay-map').click(function(e){
     $(this).css("display","none");
 });
 
+$(document).ready(function() {
+    $(".nav-preload").removeClass("nav-preload");
+});
 
 $('.next').click(function(){
     $(this).closest('.lightbox').hide().next().show();

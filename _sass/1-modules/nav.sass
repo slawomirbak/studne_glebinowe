@@ -1,4 +1,12 @@
-// Navigation
+// disable transition
+.nav-preload * 
+  -webkit-transition: none !important
+  -moz-transition: none !important
+  -ms-transition: none !important
+  -o-transition: none !important
+  
+  
+  // Navigation
 .hero-nav 
   a
     text-decoration: none
@@ -56,7 +64,6 @@
 
 #menuToggle input:checked ~ ul
   transform: none
-  opacity: 1
 
 #menu
   position: absolute
@@ -72,7 +79,6 @@
   transform: translate(100%,0)
   transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1)
   z-index: 5
-  opacity: 0
 
 
 @media (min-width:768px)
