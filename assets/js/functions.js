@@ -9,3 +9,8 @@ $('.overlay-map').click(function(e){
     e.preventDefault();
     $(this).css("display","none");
 });
+
+
+$('.next').click(function(){
+    $(this).closest('.lightbox').hide().next().show();
+});
