@@ -27,7 +27,7 @@ plugins:
   - jekyll-autoprefixer
 
 sass:
-  sass_dir: _sass
+  sass_dir: _sass 
 
 
 
